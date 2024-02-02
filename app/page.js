@@ -5,7 +5,7 @@ import Posts from "./components/Posts";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen w-full max-w-5xl flex-col p-5">
+    <main className="flex min-h-screen w-full px-2 md:max-w-5xl flex-col">
       {/* <h1 className="text-blue-600 font-bold text-3xl text-center m-10">Welcome to your music connection.</h1> */}
       <Hero />
       <div className="mt-20 ">

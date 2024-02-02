@@ -1,7 +1,7 @@
 import { getPosts } from "@/sanity/lib/client";
 import PostCard from "./PostCard";
 import Card from "./Card";
-export const revalidate = 60
+
 
 const Posts = async () => {
   try {

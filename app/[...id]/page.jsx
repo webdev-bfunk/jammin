@@ -17,7 +17,7 @@ export default async function SinglePostPage({ params }) {
     return <div>No post found</div>;
   }
   return (
-    <div className='h-full  grid grid-cols-1 md:grid-cols-2 w-full max-w-5xl p-5'>
+    <div className='h-full  grid grid-cols-1 md:grid-cols-2 w-full md:max-w-5xl px-2'>
       <div className='w-full items-center justify-center mt-10'>
         <Image src={singlePost.image} alt="image" height={450} width={450} className='rounded-md'/>
       </div>
@@ -33,10 +33,10 @@ export default async function SinglePostPage({ params }) {
       
 
    
-      <span className="flex gap-1 text-gray-200 justify-end w-full px-5 text-lg">
-            Posted by
+      <span className="flex gap-1 text-gray-200 justify-end w-full text-lg">
+            
             <h3 className="font-bold text-sky-400">{singlePost.author.name}</h3>{" "}
-            on{" "}
+            |{" "}
             <h3 className="font-bold text-sky-400">
             {Date(singlePost.publishedAt).substring(0, 15)}
             </h3>

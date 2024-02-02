@@ -35,9 +35,9 @@ export default function Card({ postData }) {
             </button>
           </div>
           <span className="flex gap-1 text-gray-200 justify-end w-full px-5 ">
-            posted by
+            
             <h3 className="font-bold text-sky-400"> {postData.author.name}</h3>{" "}
-            on{" "}
+            |{" "}
             <h3 className="font-bold text-sky-400">
               {Date(postData.publishedAt).substring(0, 15)}
             </h3>

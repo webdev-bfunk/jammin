@@ -12,9 +12,9 @@ const About = () => {
       <h1 className=" text-center  text-5xl md:text-6xl text-transparent bg-clip-text bg-gradient-to-t from-rose-400 via-fuchsia-500 to-indigo-500 font-extrabold tracking-tighter">
         About us
       </h1>
-      <div className=" max-w-5xl w-full p-5 flex flex-col md:flex-row gap-5">
+      <div className=" md:max-w-5xl w-full flex flex-col md:flex-row gap-5">
         <div className="flex flex-col justify-center flex-1 m-5 items-center">
-          <h1 className="text-xl leading-[60px] text-white">
+          <h1 className="text-xl leading-[50px] text-white">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
             repellendus magni sapiente et ipsam libero quod sint numquam
             mollitia esse, doloremque, reiciendis molestias odit, tenetur qui

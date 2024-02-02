@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const Contact = () => {
   return (
-    <div className=" max-w-5xl w-full p-5 flex flex-col-reverse md:flex-row gap-5">
+    <div className=" md:max-w-5xl w-full  flex flex-col-reverse md:flex-row gap-5">
     <div className="flex flex-col space-y-4 justify-end flex-1 ">
       <Image
         src="/vector2.png"
