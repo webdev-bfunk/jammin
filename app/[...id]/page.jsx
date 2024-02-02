@@ -9,7 +9,13 @@ export const revalidate = 60
 export default async function SinglePostPage({ params }) {
   const postID = params.id[0];
   const posts = await getPosts();
-  const singlePost = posts.find((post) => post._id === postID)
+  const singlePost = posts.find((post) => post._id === postID);
+
+  // Check if singlePost is not defined
+  if (!singlePost) {
+    // Handle the case when there is no post with the specified postID
+    return <div>No post found</div>;
+  }
   return (
     <div className='h-full  grid grid-cols-1 md:grid-cols-2 w-full max-w-5xl p-5'>
       <div className='w-full items-center justify-center mt-10'>
