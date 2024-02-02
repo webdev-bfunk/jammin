@@ -19,7 +19,7 @@ export default function Card({ postData }) {
             {postData.title}
           </h1>
           <span className="text-white flex gap-1 px-3 text-sm py-1 rounded-xl absolute top-8 right-8 opacity-80">
-            {postData.categories.map((category) => (
+          {postData.categories && postData.categories.map((category) => (
               <p
                 key={category._id}
                 className="border bg-primary-dark text-sky-300 py-1 px-2 text-xs rounded-full"
