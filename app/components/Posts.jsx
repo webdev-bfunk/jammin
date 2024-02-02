@@ -8,6 +8,12 @@ const Posts = async () => {
     const posts = await getPosts();
     console.log(posts);
 
+    // Check if posts is not null before mapping
+    if (!posts) {
+      // Handle the case when posts is null
+      return <div>No posts available</div>;
+    }
+
     return (
       <div id="posts" className="">
         <div className="w-full h-[5px] bg-gradient-to-r from-[#181818] via-fuchsia-500 to-[#181818]" />
